@@ -6,6 +6,7 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class Repo(
+    val id: Int, // unique ID need
     @field:Json(name = "author")
     val author: String,
     @field:Json(name = "name")

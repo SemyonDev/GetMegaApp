@@ -13,12 +13,12 @@ data class Developer(
     @field:Json(name = "username")
     val username: String,
     @field:Json(name = "name")
-    val name: String,
+    val name: String = "",
     @field:Json(name = "type")
-    val type: String,
+    val type: String = "",
     @field:Json(name = "url")
-    val url: String,
+    val url: String = "",
     @field:Json(name = "repo")
-    val repo: Repo,
+    val repo: Repo? = null,
 ) : Parcelable
 

@@ -10,6 +10,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.getmega.getmegaapp.trendingRepo.RepoListScreen
 import com.getmega.getmegaapp.ui.theme.GetMegaAppTheme
 import org.koin.androidx.compose.viewModel
 
@@ -25,6 +26,7 @@ class HomeActivity : ComponentActivity() {
                 ) {
                     Greeting("Android")
                     val vm by viewModel<HomeActivityViewModel>()
+                    RepoListScreen(vm)
                 }
             }
         }
